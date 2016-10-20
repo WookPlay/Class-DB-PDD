@@ -28,7 +28,7 @@
   $result = $PGSQL->select('SELECT * FROM "public"."Tabla"');
   
   /* Example Select usando una base de datos diferente sin inicializar una nueva conexión |Select using a different database without initializing a new connection*/
-  $result = $PGSQL->select_sql('_new_dbname','SELECT * FROM "public"."Tipo_convenio"'); 
+  $result = $PGSQL->select_sql('_new_dbname','SELECT * FROM "public"."Tabla"'); 
   
   /* Example Insert */
   $data  = [ "Campo" => "Valor", "Campo2" => $valor2 ];
