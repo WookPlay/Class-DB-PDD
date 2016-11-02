@@ -65,7 +65,8 @@
                   break;
               case 'odbc':
                   $result   =   odbc_exec($this->conexion,$sql)or die(exit("Error en consulta"));
-                  $row      = 0; 
+                  $row      = 0;
+                  $datos    = '';
                   while (odbc_fetch_row($result)) {
                      for ($j = 1; $j <= odbc_num_fields($result); $j++) {
                          $campo_tabla                 = odbc_field_name($result, $j);
@@ -139,7 +140,7 @@
         public function update($table,$data,$where){
           switch ($this->tipo) {
             case 'mysql':
-                
+                $wer = '';
                 if(is_array($where)){
                   foreach ($where as $clave=>$valor){
                     $wer.= $clave."='".$valor."' AND ";
@@ -222,6 +223,7 @@
 
           switch ($this->tipo) {
             case 'mysql':
+                $wer = '';
                 if(is_array($where)){
                   foreach ($where as $clave=>$valor){
                     $wer.= $clave."='".$valor."' and ";
@@ -280,6 +282,7 @@
                 return $res;
                 break;
             case 'odbc':
+                $wer = '';
                 if(is_array($where)){
                   foreach ($where as $clave=>$valor){
                     $wer.= $clave."='".$valor."' and ";
