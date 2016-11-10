@@ -111,7 +111,7 @@
   ************************************************************/
   /* Datos de Conexión */
   $DB_TIPE_ODBC    = 'odbc';             /* Tipo de Conexión */
-  $DB_HOST_ODBC    = 'empresanet53b';    /* Host */
+  $DB_HOST_ODBC    = 'nombre_del_ODBC';  /* Host */
   $DB_NAME_ODBC    = '';                 /* Nombre de Base de Datos */
   $DB_USER_ODBC    = '';                 /* Nombre de Usuario de Base de Datos */
   $DB_PASS_ODBC    = '';                 /* Contraseña de Usuario de Base de Datos */
