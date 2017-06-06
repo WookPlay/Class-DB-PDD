@@ -1,0 +1,34 @@
+{
+   "data":[
+      {
+         "Index": 4,
+         "Name": "Bob",
+         "Age": 7,
+         "Image": "None"
+      },
+      {
+         "Index": 2,
+         "Name": "Timmy",
+         "Age": 4,
+         "Image": "None"
+      },
+      {
+         "Index": 3,
+         "Name": "Heather",
+         "Age": 55,
+         "Image": "<img height='85' width='85' src='image.jpg'/>"
+      },
+      {
+         "Index": 5,
+         "Name": "Sally",
+         "Age": 22,
+         "Image": "None"
+      }
+   ],
+    "columns": [
+        { "title": "Index", "data" : "Index" },
+        { "title": "Name",  "data": "Name" },
+        { "title": "Age", "data": "Age" },
+        { "title": "Image", "data": "Image" }
+    ]
+}
